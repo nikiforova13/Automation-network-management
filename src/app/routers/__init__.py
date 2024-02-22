@@ -1,1 +1,1 @@
-from .base import router, ns
+from .base import router
