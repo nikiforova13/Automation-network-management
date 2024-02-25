@@ -1,26 +1,83 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-<title>Font Awesome 5 Icons</title>
-<meta name='viewport' content='width=device-width, initial-scale=1'>
-<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
-<!--Get your own code at fontawesome.com-->
+        <link type="text/css" href="{{ url_for('static', filename='css/styles.css') }}" rel="stylesheet"/>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <meta charset="UTF-8">
+    <title>Main page</title>
+    <link type="text/css" href="{{ url_for('static', filename='css/styles.css') }}" rel="stylesheet"/>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <meta charset="UTF-8">
+
 </head>
+
 <body>
+<main>
 
-<h1>fas fa-ellipsis-h</h1>
+<div class="container">
 
-<i class='fas fa-ellipsis-h'></i>
-<i class='fas fa-ellipsis-h' style='font-size:24px'></i>
-<i class='fas fa-ellipsis-h' style='font-size:36px'></i>
-<i class='fas fa-ellipsis-h' style='font-size:48px;color:red'></i>
-<br>
+    <div class="sidebar">
 
-<p>Used on a button:</p>
-<button style='font-size:24px'>Button <i class='fas fa-ellipsis-h'></i></button>
+        <ul>
+            <li>
+                <a href="#" class="active">
+                    <span class="icon"><i class="fas fa-home"></i></span>
+                    <span class="item">Главная</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="icon"><i class="fas fa-desktop"></i></span>
+                    <span class="item">Сетевые устройства</span>
+                </a>
+            </li>
+        </ul>
+    </div>
 
-<p>Unicode:</p>
-<i style='font-size:24px' class='fas'>&#xf141;</i>
+    <ul class="menu">
 
+        <li class="left-li"><a href="{{url_for('.contact')}}"><i class='fa fa-bars white-color'></i></a></li>
+
+        <li class="left-li">
+            <header class="white-color">Automation of network management</header>
+        </li>
+        <li class="right-li"><a href="{{url_for('.contact')}}"><i class='fa fa-cog white-color'></i></a></li>
+        <li class="right-li"><a href="{{url_for('.contact')}}"><i class='fa fa-user white-color'></i></a></li>
+        <li class="right-li"><a href="{{url_for('.contact')}}"><i class='fa fa-info white-color'></i></a></li>
+    </ul>
+
+</div>
+</div>
+
+<script>
+    var menu = document.querySelector(".menu");
+    menu.addEventListener("click", () => {
+        document.querySelector("body").classList.toggle("active");
+    })
+</script>
+
+    <p class="style1">
+        Сервис предназначен для автоматизированного управления сетевыми устройствами.
+    </p>
+    <p class="style1">Сервис предоставляет следующие возможности:</p>
+
+    <ul class="style1">
+        <li class="op">Сбор конфигурации с устройства</li>
+        <li class="op">Настройка устройства</li>
+    </ul>
+
+    <!--Contact the author-->
+
+    <link type="text/css" href="{{ url_for('static', filename='css/contact.css') }}" rel="stylesheet"/>
+    <p class="style1">Разработчик:</p>
+    <address>
+        <a href="mailto:olyanikiforova1313@gmail.com">olyanikiforova1313@gmail.com</a><br/>
+        <a href="tel:+79944052513">+7 (994) 405‑25-13</a>
+    </address>
+</main>
 </body>
+
 </html>

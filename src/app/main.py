@@ -16,10 +16,9 @@ app.register_blueprint(router, url_prefix="/configurations")
 def main():
     return render_template('main.html')
 
-
 @app.get('/contact')
 def contact():
-    return render_template('contact.html')
+    return render_template('info.html')
 
 
 if __name__ == "__main__":
