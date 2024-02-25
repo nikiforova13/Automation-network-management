@@ -1,7 +1,7 @@
 /* Menu main page */
 ul.mainmenu {
     list-style: none;
-    background: #696969;
+    background: #00BFFF;
     height: 40px;
     margin: 0;
     padding: 0;
@@ -63,7 +63,7 @@ ul.mainmenu {
 
 /* Colors for using */
 .white-color {
-    color: #FFFFFF;
+    color: #00008B;
 }
 
 header {
