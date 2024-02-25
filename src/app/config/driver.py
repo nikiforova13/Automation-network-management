@@ -35,16 +35,15 @@ class BaseNetworkDriverSettings(BaseSettings):
         return self.model_dump()
 
 
-a = BaseNetworkDriverSettings()
-print(a)
-print(a.get_settings)
+driver = BaseNetworkDriverSettings()
+print(driver)
 
-
-class BaseNetworkDriver2(Scrapli):
-    # settings: a.get_config
-
-    def __init__(self, **kwargs):
-        super().__init__(**a.get_config)
+#
+# class BaseNetworkDriver2(Scrapli):
+#     # settings: a.get_config
+#
+#     def __init__(self, **kwargs):
+#         super().__init__(**a.get_config)
 
     # def get_conf_d(self):
     #     a = self.send_command('show run')

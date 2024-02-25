@@ -1,0 +1,74 @@
+/* Menu main page */
+ul.mainmenu {
+    list-style: none;
+    background: #696969;
+    height: 40px;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    overflow: hidden;
+}
+
+.left-li {
+    float: left;
+    margin: 10px 40px 0 50px;
+
+}
+
+.right-li {
+    float: right;
+    margin: 10px 10px 0 10px;
+}
+
+/* Style for fonts*/
+.style1 {
+  font:
+    font-family: Arial,
+    font-style: normal;
+    font-size: 18px;
+}
+
+/* Style for button*/
+.styled {
+  border: 0;
+  line-height: 2.5;
+  padding: 0 20px;
+  font-size: 1rem;
+  text-align: center;
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
+  border-radius: 10px;
+  background-color: rgba(220, 0, 0, 1);
+  background-image: linear-gradient(
+    to top left,
+    rgba(0, 0, 0, 0.2),
+    rgba(0, 0, 0, 0.2) 30%,
+    rgba(0, 0, 0, 0)
+  );
+  box-shadow:
+    inset 2px 2px 3px rgba(255, 255, 255, 0.6),
+    inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+}
+
+.styled:hover {
+  background-color: rgba(255, 0, 0, 1);
+}
+
+.styled:active {
+  box-shadow:
+    inset -2px -2px 3px rgba(255, 255, 255, 0.6),
+    inset 2px 2px 3px rgba(0, 0, 0, 0.6);
+}
+
+
+/* Colors for using */
+.white-color {
+    color: #FFFFFF;
+}
+
+header {
+  font:
+    font-family: Arial,
+    font-style: normal;
+    font-size: 22px;
+}

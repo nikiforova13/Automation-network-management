@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link type="text/css" href="{{ url_for('static', filename='css/styles.css') }}" rel="stylesheet" />
     <meta charset="UTF-8">
     <title>Configurations device</title>
-    <p>Главное меню управления устройством</p>
+    <h3>Главное меню управления устройством</h3>
 
      <form action="{{url_for('.get_current_device_configuration') }}" method="get" >
-        <p><input type="submit" name="submit1" value="Получить конфигурацию устройства">
+        <p><input type="submit" class="styled" name="submit1" value="Получить конфигурацию устройства">
     </form>
 
     <form action="{{url_for('.get_all_available_interfaces')}}" method="get" >
-        <p><input type="submit" value="Получить конфигурацию интерфейсов">
+        <p><input type="submit" class="styled" value="Получить конфигурацию интерфейсов">
     </form>
+
+
 </head>
 <body>
 
